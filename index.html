@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Library</title>
+    <title>my Library</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="main-wrap">
-        <div class="header-wrap">
-            <header class="header-word">my Library</header>
-            <header class="header-2nd-line">by M.LAI 31/AUG/2024</header>
-        </div>
+    <div class="container-wrap">
+        <h1>My Library</h1>
+        <button id="new-book-btn">NEW BOOK</button>
         <div class="body-wrap"></div>
+        <form id="book-form" style="display: none;">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Pages" required>
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read">
+            <button type="submit">Add Book</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
