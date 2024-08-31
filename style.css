@@ -1,0 +1,62 @@
+/* color theme 
+Blue:           : #42B0D5;
+Dark Blue:      : #00233D;
+Mid Blue:       : #0073AB;
+Light Blue:     : #B5E0F4;
+White:          : #FFFFFF;
+Grey:           : #4D4D4D;
+Ultra Light Grey: #F7F7F7;
+Light Grey      : #EDEDED;
+Mid Grey        : #CFCFCF;
+Dark Grey       : #878787;
+Ultra Dark Grey : #545454;
+*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFCFCF;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 30px 5px 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #00233D;
+}
+
+.header-word {
+    color: #FFFFFF;
+    font-size:xx-large;
+}
+
+.header-2nd-line {
+    color: #FFFFFF;
+    font-size: medium;
+}
+
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 30px 5px 30px;
+    padding: 20px;
+    font-size:xx-large;
+    border-radius: 8px;
+    background-color: #00233D;
+    height: 100vh;
+}
