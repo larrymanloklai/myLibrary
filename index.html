@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my Library</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>My Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-wrap">
-        <h1>My Library</h1>
-        <button id="new-book-btn">NEW BOOK</button>
+    <div class="main-wrap">
+        <div class="header-wrap">
+            <h1>my Library</h1>
+            <button id="new-book-btn">Add New Book</button>
+        </div>
         <div class="body-wrap"></div>
-        <form id="book-form" style="display: none;">
-            <input type="text" id="title" placeholder="Title" required>
-            <input type="text" id="author" placeholder="Author" required>
-            <input type="number" id="pages" placeholder="Pages" required>
-            <label for="read">Read:</label>
-            <input type="checkbox" id="read">
-            <button type="submit">Add Book</button>
-        </form>
     </div>
+
+    <!-- Dialog for adding a new book -->
+    <dialog id="book-dialog">
+        <form id="book-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" name="pages" required>
+            <label for="read">Have you read this book?</label>
+            <select id="read" name="read">
+                <option value="read">Read</option>
+                <option value="not read yet">Not Read Yet</option>
+            </select>
+            <div>
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
     <script src="script.js"></script>
 </body>
 </html>

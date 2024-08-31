@@ -50,7 +50,7 @@ h1 {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
-    background-color: #00233D; /* Dark Blue */
+    background-color: #4D4D4D;
     padding: 20px;
     border-radius: 5px;
     color: #FFFFFF; /* White */
@@ -92,7 +92,7 @@ h1 {
 }
 
 button {
-    background-color: #0073AB; /* Mid Blue */
+    background-color: #42B0D5; /* Mid Blue */
     color: #FFFFFF; /* White */
     padding: 10px;
     border: none;
@@ -102,13 +102,13 @@ button {
 }
 
 button:hover {
-    background-color: #005f8f; /* Darker shade of Mid Blue for hover effect */
+    background-color: #0073AB; /* Darker shade of Mid Blue for hover effect */
 }
 
 button.remove-book-btn {
-    background-color: #545454; /* Ultra Dark Grey */
+    background-color: #878787; /* Ultra Dark Grey */
 }
 
 button.remove-book-btn:hover {
-    background-color: #333333; /* Even darker shade for hover effect */
+    background-color: #545454; /* Even darker shade for hover effect */
 }
