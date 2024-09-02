@@ -6,6 +6,8 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+// create a new method toggleReadStatus for the object constructor Book.
+// which is the opposite of this.read.
 Book.prototype.toggleReadStatus = function () {
     if (this.read === 'read') {
         this.read = 'not read yet';
